@@ -34,8 +34,23 @@ function promptUser() {
     },
     {
       type: "input",
+      name: "usage",
+      message: "describe anything somebody would need to know to use the site: "
+    },
+    {
+      type: "input",
+      name: "name",
+      message: "What is your name? "
+    },
+    {
+      type: "input",
       name: "linkedin",
-      message: "Enter your LinkedIn URL."
+      message: "What is the link to your linkedin profile? "
+    },
+    {
+      type: "input",
+      name: "username",
+      message: "What is your username? "
     }
   ]);
 }
@@ -45,22 +60,33 @@ function generateReadMe(answers) {
 # ${answers.Title}
 ### ${answers.description}
 ## Table of Contents
-  * [Technologies Used](Technologies_Used)
-  * [Deployed Site](Deployed)
-  * [Features](Features)
-  * [Usage](Usage)
-  * [Author](Author)
-  * [Credits](Credits)
-  * [License](License)
+  * [Technologies Used](#Technologies_Used)
+  * [Deployed Site](#Deployed)
+  * [Features](#Features)
+  * [Usage](#Usage)
+  * [Author](#Author)
+  * [Credits](#Credits)
+  * [License](#License)
   
 ## Technologies_Used
-    ${answers.techs}
+  ${answers.techs}
 ## Deployed Site
 [${answers.Title}](${answers.deployedSite})
 
 ## Features
-    ${answers.features}
-       ${answers.linkedin}`;
+${answers.features}
+## Usage
+${answers.usage}
+## Author
+${answers.name}: 
+
+* [linkedin] (${answers.linkedin}) 
+
+* [github] (https://github.com/${answers.username}/)
+## Credits
+## Licence
+
+`;
 }
 
 async function init() {
