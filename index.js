@@ -29,8 +29,8 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
+      name: "features",
+      message: "list the features of your project"
     },
     {
       type: "input",
@@ -59,7 +59,7 @@ function generateReadMe(answers) {
 [${answers.Title}](${answers.deployedSite})
 
 ## Features
-    ${answers.github}
+    ${answers.features}
        ${answers.linkedin}`;
 }
 
