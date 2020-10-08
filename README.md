@@ -1,6 +1,6 @@
  
-# Rachael is Awesome
-### undefined
+# Rachael is Cool
+### this project describes how cool rachael is
 ## Table of Contents
   * [Technologies Used](Technologies_Used)
   * [Deployed Site](Deployed)
@@ -11,10 +11,10 @@
   * [License](License)
   
 ## Technologies_Used
-    HTML, CSS, Javascript
+    all of them
 ## Deployed Site
-[Rachael is Awesome](https://www.google.com/)
+[Rachael is Cool](https://www.google.com/)
 
 ## Features
-    RKSOUTH
-       THEHE
+    drugs, coolness, all around awesomeness
+       no

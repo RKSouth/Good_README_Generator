@@ -8,10 +8,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "dotenv": "^8.0.0",
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   },
   "devDependencies": {},
   "keywords": [],
-  "description": ""
+  "description": "* [Technologies Used](Technologies_Used)   * [Deployed Site](Deployed)   * [Features](Features)   * [Usage](Usage)   * [Author](Author)   * [Credits](Credits)   * [License](License)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RKSouth/Good_README_Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RKSouth/Good_README_Generator/issues"
+  },
+  "homepage": "https://github.com/RKSouth/Good_README_Generator#readme"
 }
