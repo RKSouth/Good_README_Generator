@@ -66,7 +66,10 @@ function promptUser() {
    
      
 }
-
+function renderLicense(license) {
+  return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+  `
+}
 
 function generateReadMe(answers) {
   return ` 
@@ -100,8 +103,8 @@ ${answers.usage}
 * [github] (#https://github.com/${answers.username}/)
 ## Credits
 ${answers.credits}
-## Licence
-(#https://img.shields.io/apm/l/${answers.license})
+## License
+${renderLicense(answers.license)};
 
 ![Github Profile Picture](http://github.com/${answers.username}.png)
 `;

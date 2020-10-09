@@ -1,6 +1,6 @@
  
-# title
-### describe
+# t
+### t
 ## Table of Contents
   * [Technologies Used](#Technologies_Used)
   * [Deployed Site](#Deployed)
@@ -11,30 +11,27 @@
   * [License](#License)
   
 ## Technologies_Used
-  tech
+  t
 ## Deployed Site
-[title](#deployed)
+[t](#t)
 
 ## Installation
-install
+t
 ## Usage
-site
+t
 
 ## Author
 
 
-**rafchael**
+**t**
 
+* [linkedin] (#t) 
 
-
-rafchael: 
-
-* [linkedin] (#profile) 
-
-* [github] (#https://github.com/RKSouth/)
+* [github] (#https://github.com/t/)
 ## Credits
-Kerwin
-## Licence
-(#https://img.shields.io/apm/l/MIT)
+t
+## License
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  ;
 
-![Github Profile Picture](http://github.com/RKSouth.png)
+![Github Profile Picture](http://github.com/t.png)
