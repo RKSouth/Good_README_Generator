@@ -65,39 +65,14 @@ function promptUser() {
       message: "Is there anyone you would like to thank? "
     },
     {
-      type: "list",
+      type: "input",
       name: "license",
-      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
       message: "What licence would you prefer?"
     }])
-  // .then(function({ username }) {
-  //   const queryUrl = `https://api.github.com/users/${answers.username}/${answers.repo}`;
-
-  //   axios.get(queryUrl).then(function(res) {
-  //     const repoNames = res.data.map(function(repo) {
-  //       return repo.name;
-  //     });
-      
-  //     const repoNames = [];
-  //     for (var i = 0; i < res.data.length; i++) {
-  //       repoNames.push(res.data[i].name);
-  //     }
-
-  //     const repoNamesStr = repoNames.join("\n");
-
-  //     fs.writeFile("repos.txt", repoNamesStr, function(err) {
-  //       if (err) {
-  //         throw err;
-  //       }
-
-  //       console.log(`Saved ${repoNames.length} repos`);
-  //     });
-  //   });
-  
-  
-  
-  // });
+   
+     
 }
+
 
 function generateReadMe(answers) {
   return ` 
@@ -123,6 +98,11 @@ ${answers.installation}
 ${answers.usage}
 
 ## Author
+
+\n**${answers.name}**
+
+
+
 ${answers.name}: 
 
 * [linkedin] (${answers.linkedin}) 
@@ -131,15 +111,15 @@ ${answers.name}:
 ## Credits
 ${answers.credits}
 ## Licence
+/apm/l/:${answers.licence}
 
-${answers.licence}
+![Github Profile Picture](http://github.com/${answers.username}.png)
 `;
 }
 
 async function init() {
   try {
     const answers = await promptUser();
-
     const html = generateReadMe(answers);
 
     await writeFileAsync("README.md",html);
@@ -147,7 +127,8 @@ async function init() {
     console.log("Successfully wrote to README.md");
   } catch(err) {
     console.log(err);
-  }
+  };
+
 }
 
 init();
