@@ -3,6 +3,7 @@ const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
 
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
@@ -11,6 +12,12 @@ function promptUser() {
       type: "input",
       name: "Title",
       message: "What is your project Title?"
+    },
+    
+    {
+      type: "input",
+      name: "repo",
+      message: "What is the name of your repo?"
     },
     {
       type: "input",
@@ -29,13 +36,13 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "features",
-      message: "list the features of your project"
+      name: "installation",
+      message: "Please describe how to install your project:"
     },
     {
       type: "input",
       name: "usage",
-      message: "describe anything somebody would need to know to use the site: "
+      message: "Describe how to use this site: "
     },
     {
       type: "input",
@@ -50,9 +57,46 @@ function promptUser() {
     {
       type: "input",
       name: "username",
-      message: "What is your username? "
-    }
-  ]);
+      message: "What is your git hub username? "
+    },
+    {
+      type: "input",
+      name: "credits",
+      message: "Is there anyone you would like to thank? "
+    },
+    {
+      type: "list",
+      name: "license",
+      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+      message: "What licence would you prefer?"
+    }])
+  // .then(function({ username }) {
+  //   const queryUrl = `https://api.github.com/users/${answers.username}/${answers.repo}`;
+
+  //   axios.get(queryUrl).then(function(res) {
+  //     const repoNames = res.data.map(function(repo) {
+  //       return repo.name;
+  //     });
+      
+  //     const repoNames = [];
+  //     for (var i = 0; i < res.data.length; i++) {
+  //       repoNames.push(res.data[i].name);
+  //     }
+
+  //     const repoNamesStr = repoNames.join("\n");
+
+  //     fs.writeFile("repos.txt", repoNamesStr, function(err) {
+  //       if (err) {
+  //         throw err;
+  //       }
+
+  //       console.log(`Saved ${repoNames.length} repos`);
+  //     });
+  //   });
+  
+  
+  
+  // });
 }
 
 function generateReadMe(answers) {
@@ -62,7 +106,7 @@ function generateReadMe(answers) {
 ## Table of Contents
   * [Technologies Used](#Technologies_Used)
   * [Deployed Site](#Deployed)
-  * [Features](#Features)
+  * [Installation](#installation)
   * [Usage](#Usage)
   * [Author](#Author)
   * [Credits](#Credits)
@@ -71,12 +115,13 @@ function generateReadMe(answers) {
 ## Technologies_Used
   ${answers.techs}
 ## Deployed Site
-[${answers.Title}](${answers.deployedSite})
+[${answers.Title}](#${answers.deployedSite})
 
-## Features
-${answers.features}
+## Installation
+${answers.installation}
 ## Usage
 ${answers.usage}
+
 ## Author
 ${answers.name}: 
 
@@ -84,8 +129,10 @@ ${answers.name}:
 
 * [github] (https://github.com/${answers.username}/)
 ## Credits
+${answers.credits}
 ## Licence
 
+${answers.licence}
 `;
 }
 
