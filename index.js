@@ -13,12 +13,6 @@ function promptUser() {
       name: "Title",
       message: "What is your project Title?"
     },
-    
-    {
-      type: "input",
-      name: "repo",
-      message: "What is the name of your repo?"
-    },
     {
       type: "input",
       name: "description",
@@ -105,13 +99,13 @@ ${answers.usage}
 
 ${answers.name}: 
 
-* [linkedin] (${answers.linkedin}) 
+* [linkedin] (#${answers.linkedin}) 
 
-* [github] (https://github.com/${answers.username}/)
+* [github] (#https://github.com/${answers.username}/)
 ## Credits
 ${answers.credits}
 ## Licence
-/apm/l/:${answers.licence}
+https://img.shields.io/apm/l/${answers.licence}
 
 ![Github Profile Picture](http://github.com/${answers.username}.png)
 `;

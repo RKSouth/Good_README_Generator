@@ -1,6 +1,6 @@
  
-# title
-### description
+# Title
+### description of project
 ## Table of Contents
   * [Technologies Used](#Technologies_Used)
   * [Deployed Site](#Deployed)
@@ -11,31 +11,30 @@
   * [License](#License)
   
 ## Technologies_Used
-  tecg
+  tech
 ## Deployed Site
-[title](#site)
+[Title](#link)
 
 ## Installation
-install
+install it
 ## Usage
-site
+use it
 
 ## Author
 
 
-**name**
+**Rachael**
 
 
-Location: undefined
 
-name: 
+Rachael: 
 
-* [linkedin] (profile) 
+* [linkedin] (#link right here) 
 
-* [github] (https://github.com/RKSouth/)
+* [github] (#https://github.com/RKSouth/)
 ## Credits
-thanks
+Kerwin
 ## Licence
-/apm/l/:undefined
+https://img.shields.io/apm/l/undefined
 
 ![Github Profile Picture](http://github.com/RKSouth.png)
