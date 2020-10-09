@@ -95,17 +95,13 @@ ${answers.usage}
 
 \n**${answers.name}**
 
-
-
-${answers.name}: 
-
 * [linkedin] (#${answers.linkedin}) 
 
 * [github] (#https://github.com/${answers.username}/)
 ## Credits
 ${answers.credits}
 ## Licence
-https://img.shields.io/apm/l/${answers.licence}
+(#https://img.shields.io/apm/l/${answers.license})
 
 ![Github Profile Picture](http://github.com/${answers.username}.png)
 `;
