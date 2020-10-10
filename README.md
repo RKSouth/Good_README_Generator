@@ -18,7 +18,7 @@ There is no deployed site, this is a back-end tool to help developers.
 ## Installation
 npm install, npm init -y
 ## Usage
-generate a readme and follow the prompts. If you would like to test the code you can use jest. 
+generate a readme and follow the prompts. If you would like to test the code you can use jest. If this is not enough for you please watch the video in the repo to help you. 
 
 ## Author
 
