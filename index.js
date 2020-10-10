@@ -12,6 +12,7 @@ function promptUser() {
       type: "input",
       name: "Title",
       message: "What is your project Title?"
+     
     },
     {
       type: "input",
@@ -96,7 +97,7 @@ ${answers.usage}
 
 ## Author
 
-\n**${answers.name}**
+ 
 
 * [linkedin] (#${answers.linkedin}) 
 

@@ -1,6 +1,6 @@
  
-# t
-### t
+# Good README Generator
+### this is a simple readme generator to assist anyone who would like their readme generated for them.
 ## Table of Contents
   * [Technologies Used](#Technologies_Used)
   * [Deployed Site](#Deployed)
@@ -11,27 +11,26 @@
   * [License](#License)
   
 ## Technologies_Used
-  t
+  node, javascript, markdown
 ## Deployed Site
-[t](#t)
+There is no deployed site, this is a back-end tool to help developers. 
 
 ## Installation
-t
+npm install, npm init -y
 ## Usage
-t
+generate a readme and follow the prompts. If you would like to test the code you can use jest. 
 
 ## Author
 
+Rachael Kelm-Southworth
 
-**t**
+* [linkedin](https://www.linkedin.com/in/rachael-kelm-southworth-87a3831b3) 
 
-* [linkedin] (#t) 
-
-* [github] (#https://github.com/t/)
+* [github](https://github.com/RKSouth/)
 ## Credits
-t
+ I would like to thank Kerwin, Manuel, Roger, and all of our classmates for helping us understand this subject matter and anyone that contributed to make the base code.
 ## License
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-  ;
 
-![Github Profile Picture](http://github.com/t.png)
+
+![Github Profile Picture](http://github.com/RKSouth.png)
