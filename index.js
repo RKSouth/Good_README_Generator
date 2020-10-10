@@ -97,7 +97,7 @@ ${answers.usage}
 
 ## Author
 
- 
+${answers.name}
 
 * [linkedin] (#${answers.linkedin}) 
 
